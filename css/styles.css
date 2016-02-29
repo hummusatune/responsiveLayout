@@ -20,8 +20,16 @@ html {
   border-bottom: 1px solid #E1E1E1;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #333;
+}
+
 body {
-  background: #f9f9f9;
+  background: #fff;
   font: 1em/1.5 'Libre Baskerville', serif;
   color: #111;
   position: relative;
@@ -38,7 +46,7 @@ a {
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 .nav .name {
@@ -63,22 +71,40 @@ a {
 
 .headerFlex {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 
-.flex-item1 {
-  background: skyblue;
+.headerBio {
   width: 500px;
   height: 170px;
   margin-top: 10px;
 }
 
-.flex-item2 {
+.headerPic {
   background: skyblue;
   width: 400px;
   height: 300px;
   margin-top: 10px;
   display: inline-block;
+}
+
+.mainFlex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.mainflex img {
+  height: auto;
+}
+
+.gallery {
+  background: #D4D5D8;
+}
+
+#contact ul {
+  list-style-type: none;
 }
 
 footer {
