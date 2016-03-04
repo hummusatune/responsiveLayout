@@ -1,7 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700|Montserrat:400,700);
 
-https://color.adobe.com/Birdfolio-Blues-color-theme-1945976/
-
 /* ======================
 
 Base Styles
@@ -18,7 +16,6 @@ html {
 
 .wrapper {
 	min-height: calc(100vh - 51px); /* This sticks the footer to the bottom of the screen */
-  padding: 0 1em;
   border-bottom: 1px solid #E1E1E1;
 }
 
@@ -27,13 +24,13 @@ h2,
 h3,
 h4 {
   font-family: 'Montserrat', Arial, sans-serif;
-  color: #fff;
+  color: #111;
 }
 
 body {
-  background: #EFEFEF;
+  background: #fff;
   font: 1em/1.5 'Libre Baskerville', serif;
-  color: #fff;
+  color: #111;
   position: relative;
 }
 
@@ -49,7 +46,7 @@ Navigation Styles
 
 .nav {
   display: flex;
-  justify-content: space-around;
+  flex-flow: column wrap;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
@@ -57,24 +54,34 @@ Navigation Styles
 }
 
 .nav .name {
-    margin-right: auto;
     color: #333;
-    font-size: 1.5em;
+    font-size: 1.7em;
     letter-spacing: 1px;
     text-transform: none;
-    padding-top: 5px;
+    margin: .7em 0;
 }
 
 .nav li {
-  padding: 15px 10px 10px 10px;
   text-transform: uppercase;
+  text-align: center;
 }
+
 .nav a {
-  transition: all .5s;
+  background-color: #D4D5D8;
   color: #333;
+  display: block;
+  padding: 1em 2.5em;
+  margin: 5px 0;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
+
 .nav a:hover {
-  color: #FF530D;
+  color: #F64740;
+  background-color: #fff;
+  border-color: #F64740;
 }
 
 /* ======================
@@ -86,22 +93,22 @@ Header Styles
 .headerFlex {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
 }
 
 .headerBio {
   max-width: 500px;
   height: auto;
-  margin-top: 10px;
+  text-align: center;
+  margin: 2.5em 0;
   color: #111;
+  order: 2;
 }
 
 .headerPic {
-  background: #FF530D;
+  background: #F64740;
   width: 367px;
   height: 225px;
-  margin-top: 10px;
-  display: inline-block;
+  margin: 2.5em 1em 0 1em;
 }
 
 /* ======================
@@ -117,18 +124,24 @@ Main Content Styles
   text-align: center;
 }
 
-.mainFlex h3 {
+#portfolio h3 {
   text-align: center;
   text-transform: uppercase;
-  margin-top: 100px;
+  margin: 5.5em 0 5.5em 0;
+}
+
+#contact h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 6.25em 0 3.125em 0;
 }
 
 .mainFlex img {
-  height: auto;
+  height: 25%;
 }
 
 .gallery {
-  background: #3F5765;
+  background: #D4D5D8;
 }
 
 #contact,
@@ -141,7 +154,7 @@ Main Content Styles
 }
 
 #contact p {
-  margin: 0 auto;
+  margin: 0 .7em;
   text-align: center;
   max-width: 500px;
 }
@@ -154,7 +167,19 @@ Footer Styles
 
 footer {
 	padding: 0 1em;
-	font-size: 1em;
+  font-size: 1em;
+}
+
+footer .name {
+  
+}
+
+.backToTop {
+  
+}
+
+.footerNav {
+  display: none;
 }
 
 /* ======================
@@ -177,7 +202,6 @@ Media Queries
 		margin: 0 auto;
 	}
 }
-
 
 
 
