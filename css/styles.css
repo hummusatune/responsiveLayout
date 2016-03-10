@@ -92,7 +92,7 @@ Header Styles
 
 .headerFlex {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
 }
 
 .headerBio {
@@ -109,6 +109,7 @@ Header Styles
   width: 367px;
   height: 225px;
   margin: 2.5em 1em 0 1em;
+  order: 1;
 }
 
 /* ======================
@@ -122,6 +123,7 @@ Main Content Styles
   flex-flow: row wrap;
   justify-content: space-around;
   text-align: center;
+  width: auto;
 }
 
 #portfolio h3 {
@@ -130,22 +132,26 @@ Main Content Styles
   margin: 5.5em 0 5.5em 0;
 }
 
+.gallery {
+  background: #D4D5D8;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  width: auto;
+}
+
+.galleryItem {
+  flex-basis: 200px;
+}
+
 #contact h3 {
   text-align: center;
   text-transform: uppercase;
   margin: 6.25em 0 3.125em 0;
+  color: #111;
 }
 
-.mainFlex img {
-  height: 25%;
-}
-
-.gallery {
-  background: #D4D5D8;
-}
-
-#contact,
-#contact h3 {
+#contact {
   color: #111;
 }
 
@@ -195,6 +201,12 @@ Media Queries
 		max-width: 1024px;
 		margin: 0 auto;
 	}
+
+  .headerFlex {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-around;
+  }
 
 	footer {
 		width: 70%;
