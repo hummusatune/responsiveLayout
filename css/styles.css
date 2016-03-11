@@ -123,15 +123,25 @@ Header Styles
 
 /* ======================
 
-Main Content Styles
+Portfolio Styles
 
 ======================= */
+
+#portfolio {
+  background: #D4D5D8;
+}
 
 #portfolio h3 {
   text-align: center;
   text-transform: uppercase;
   margin: 5.5em 0 5.5em 0;
 }
+
+/* ======================
+
+Gallery Styles
+
+======================= */
 
 .gallery {
   background: #D4D5D8;
@@ -152,6 +162,12 @@ Main Content Styles
   margin-bottom: 2.5em;
 }
 
+/* ======================
+
+Contact Styles
+
+======================= */
+
 #contact h3 {
   text-align: center;
   text-transform: uppercase;
@@ -162,6 +178,9 @@ Main Content Styles
 #contact {
   background: #fff;
   color: #111;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 #contact ul {
@@ -172,6 +191,7 @@ Main Content Styles
 #contact p {
   margin: auto;
   max-width: 500px;
+  text-align: center;
 }
 
 /* ======================
@@ -181,7 +201,6 @@ Footer Styles
 ======================= */
 
 footer {
-	padding: 0 1em;
   font-size: 1em;
 }
 
@@ -246,10 +265,10 @@ Media Queries
     max-width: 1240px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
 
-  .galleryItem img {
+  .galleryItem {
     min-width: 350px;
     max-width: 350px;
   }
