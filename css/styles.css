@@ -291,7 +291,7 @@ Media Queries
   }
 
   .name {
-    width: auto;
+    width: 300px;
   }
 
 }
