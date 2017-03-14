@@ -19,7 +19,6 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  border-bottom: 1px solid #E1E1E1;
 }
 
 h1,
@@ -175,7 +174,7 @@ Contact Styles
 ======================= */
 
 #contact {
-  background: #fff;
+  background: #fafafa;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -214,6 +213,7 @@ footer {
   flex-flow: row;
   justify-content: space-between;
   margin: 1em 0.5em;
+  border-top: 1px solid #E1E1E1;
 }
 
 footer ul {
@@ -246,8 +246,6 @@ Media Queries
 
 @media (min-width: 768px) {
 	.wrapper {
-		width: 93%;
-		max-width: 1024px;
 		margin: 0 auto;
 	}
 
@@ -264,6 +262,7 @@ Media Queries
   }
 
   .navList a {
+    background-color: #fafafa;
     padding: 1em 2.5em;
   }
 
@@ -276,12 +275,12 @@ Media Queries
   }
 
   .headerPic {
-    margin: 0;
+    margin: 0 1em;
     flex: 1;
   }
 
   .headerBio {
-    margin: 0 1em 0 0;
+    margin: 0 1em;
     text-align: left;
     flex: 2;
   }
@@ -289,11 +288,12 @@ Media Queries
   .gallery {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .galleryItem {
-    width: 49%
+    width: 45%;
+    margin: 0 1em;
   }
 
   .galleryItem img {
@@ -340,6 +340,8 @@ Media Queries
 
 @media (min-width: 1024px) {
   .mainNav {
+    width: 95%;
+    margin: auto;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -364,8 +366,45 @@ Media Queries
     width: 30%;
   }
 
+  .headerFlex {
+    width: 95%;
+    margin: 1em auto 2em auto;
+  }
+
   .headerBio {
+    margin: 0 5.5em 0 0;
     flex: 1;
+  }
+
+  .headerPic {
+    flex: 0;
+    margin: 0 0 0 1em;
+  }
+
+  #portfolio {
+    width: 97%;
+    margin: auto;
+  }
+
+  .gallery {
+    justify-content: center;
+    width: 97%;
+  }
+
+  .galleryItem {
+    width: 30%;
+  }
+
+  #contact p {
+    width: 51%;
+  }
+
+  footer {
+    width: 90%;
+  }
+
+  .footerName {
+    flex: 0 0 70%;
   }
 
 }
