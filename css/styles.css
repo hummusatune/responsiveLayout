@@ -197,6 +197,10 @@ Contact Styles
   text-align: center;
 }
 
+.contactInfo {
+  font-weight: bold;
+}
+
 #contact p:last-of-type {
   margin: 0 0 2em;
 }
@@ -227,6 +231,7 @@ footer a {
 
 .footerList {
   list-style-type: none;
+  font-weight: bold;
 }
 
 .footerName {
@@ -291,22 +296,55 @@ Media Queries
   }
 
   .gallery {
-    max-width: 1240px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .galleryItem {
-    min-width: 45%;
-    max-width: 45%;
+    width: 49%
+  }
+
+  .galleryItem img {
+    max-width: 100%
+  }
+
+  #contact p {
+    width: 70%;
+    text-align: center;
+  }
+
+  .contactInfo {
+    margin: 0 0 0 1em;
   }
 
 	footer {
-		width: 70%;
+		width: 93%;
 		max-width: 1024px;
+    display: block;
 		margin: 0 auto;
 	}
+
+  .footerList {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 1.5em 0 3em;
+  }
+
+  .footerName {
+    flex: 0 0 60%;
+  }
+
+  .backToTop {
+    display: none;
+  }
+
+  .footerNav {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 0.8em;
+  }
 }
 
 @media (min-width: 1025px) {
