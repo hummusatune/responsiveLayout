@@ -157,8 +157,17 @@ Gallery Styles
   max-width: 90%;
 }
 
+.galleryItem p {
+  width: 90%;
+  margin: auto;
+}
+
 .galleryItem:not(:last-of-type) {
   margin-bottom: 2.5em;
+}
+
+.galleryItem:last-of-type {
+  margin-bottom: 3.5em;
 }
 
 /* ======================
@@ -167,30 +176,29 @@ Contact Styles
 
 ======================= */
 
-#contact h3 {
-  text-align: center;
-  text-transform: uppercase;
-  margin: 5.5em 0 2.5em 0;
-  color: #111;
-}
-
 #contact {
   background: #fff;
   color: #111;
   display: flex;
   flex-flow: column;
   align-items: center;
+  margin: 0 0 2em;
 }
 
-#contact ul {
-  list-style-type: none;
-  padding: 0;
+#contact h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 3.5em 0 1em 0;
+  color: #111;
 }
 
 #contact p {
-  margin: auto;
-  max-width: 500px;
+  width: 90%;
   text-align: center;
+}
+
+#contact p:last-of-type {
+  margin: 0 0 2em;
 }
 
 /* ======================
@@ -201,14 +209,32 @@ Footer Styles
 
 footer {
   font-size: 1em;
+  font-family: 'Montserrat', Arial, sans-serif;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin: 1em 0.5em;
 }
 
-footer .name {
-  
+footer ul {
+  padding: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footerList {
+  list-style-type: none;
+}
+
+.footerName {
+  color: #333;
 }
 
 .backToTop {
-  
+  text-transform: uppercase;
 }
 
 .footerNav {
@@ -221,9 +247,9 @@ Media Queries
 
 ======================= */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 	.wrapper {
-		width: 90%;
+		width: 93%;
 		max-width: 1024px;
 		margin: 0 auto;
 	}
@@ -246,18 +272,22 @@ Media Queries
   }
 
   .headerFlex {
+    margin: 2em 0 2.5em 0;
     display: flex;
     flex-flow: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: flex-start;
   }
 
   .headerPic {
-    margin: 2.5em 0;
+    margin: 0;
+    flex: 1;
   }
 
   .headerBio {
-    margin: 0 .5em;
-    align-self: center;
+    margin: 0 1em 0 0;
+    text-align: left;
+    flex: 2;
   }
 
   .gallery {
@@ -268,8 +298,8 @@ Media Queries
   }
 
   .galleryItem {
-    min-width: 350px;
-    max-width: 350px;
+    min-width: 45%;
+    max-width: 45%;
   }
 
 	footer {
