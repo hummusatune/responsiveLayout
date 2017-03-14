@@ -72,7 +72,8 @@ Navigation Styles
   text-align: center;
   font-family: 'Montserrat', Arial, sans-serif;
   padding: 0;
-  width: 100%;
+  margin-top: 0.5em;
+  width: 90%;
 }
 
 .navList a {
@@ -106,18 +107,16 @@ Header Styles
 }
 
 .headerBio {
-  max-width: 500px;
+  width: 90%;
   text-align: center;
-  margin: 2.5em 0;
+  margin: 1em 0 2.5em;
   color: #111;
   order: 2;
 }
 
 .headerPic {
-  background: #F64740;
-  width: 367px;
-  height: 225px;
-  margin: 2.5em 1em 0 1em;
+  margin: 1.5em 0 1em;
+  width: 75%;
   order: 1;
 }
 
@@ -134,7 +133,7 @@ Portfolio Styles
 #portfolio h3 {
   text-align: center;
   text-transform: uppercase;
-  margin: 5.5em 0 5.5em 0;
+  margin: 3.5em 0;
 }
 
 /* ======================
@@ -155,7 +154,7 @@ Gallery Styles
 }
 
 .galleryItem img {
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .galleryItem:not(:last-of-type) {
